@@ -205,196 +205,136 @@
             <!-- end navigation -->
         </header>
         <!-- end header --> 
-        <!-- start banner -->
-        <section class="p-0 border-radius-6px full-screen md-h-600px sm-h-450px ipad-top-space-margin position-relative overflow-hidden">
-            <div id="particles-style-01" class="position-absolute h-100 top-0 left-0 w-100" data-particle="true" data-particle-options='{"particles":{"number":{"value":10,"density":{"enable":true,"value_area":800}},"color":{"value":["#000000", "#BEFF01"]},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":1,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":4,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true}'></div>
-            <div class="looping-wrapper md-h-100"></div>
-            <div class="text-base-color absolute-middle-center banner-title fw-600 d-none d-md-inline-block" data-anime='{ "el": "lines", "translateX": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>creative</div>
-            <div class="container h-100 position-relative">
-                <div class="row align-items-center justify-content-center h-100">
-                    <div class="col-12 text-center">
-                        <div class="fs-120 lh-120 sm-fs-100 text-dark-gray fw-600 ls-minus-4px" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 500, "staggervalue": 300, "easing": "easeOutQuad" }'>Program Studi Desain Interior</div>
+        <!-- start page title -->
+        <div style="max-width: 1200px; margin: 0 auto; padding-left: 15px; padding-right: 15px;">
+            <section class="top-space-margin page-title-big-typography border-radius-6px lg-border-radius-0px p-0"
+                data-parallax-background-ratio="0.5"
+                style="background-image: url('{{ asset('images/example2.png') }}'); background-size: cover; background-position: center; min-height: 300px; border-radius: 12px;">
+                
+                <div class="opacity-extra-medium" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+                <div class="container">
+                    <div class="row align-items-center justify-content-center small-screen">
+                        <div class="col-lg-8 position-relative text-center page-title-extra-large"
+                            data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                            
+                            <h1 class="m-auto"
+                                style="
+                                    color: white;
+                                    font-family: 'Helvetica Neue', sans-serif;
+                                    font-weight: 700;
+                                    font-size: 48px;
+                                    letter-spacing: 2px;
+                                    text-transform: uppercase;
+                                    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+                                    line-height: 1.2;
+                                    transition: transform 0.3s ease, opacity 0.3s ease;
+                                ">
+                                Desain Interior
+                            </h1>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- end banner -->
-        <!-- start section -->
-        <section class="p-0">
-            <div class="container">
-                <div class="row justify-content-center align-items-center flex-column flex-sm-row" data-anime='{ "el": "childs", "translateX": [15, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <!-- start features box item -->
-                    <div class="col-auto icon-with-text-style-08 md-mb-10px text-center text-md-start">
-                        <div class="feature-box feature-box-left-icon-middle d-inline-flex align-middle">
-                            <div class="feature-box-icon me-5px">
-                                <i class="bi bi-patch-check-fill fs-15 text-dark-gray"></i>
-                            </div>
-                            <div class="feature-box-content">
-                                <span class="fs-14 fw-600 text-dark-gray text-uppercase">Kreatif Berkreasi</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end features box item -->
-                    <div class="col-auto md-mb-15px d-none d-md-flex">
-                        <span class="progress-step-separator bg-dark-gray w-100px lg-w-70px separator-line-1px d-block mx-auto"></span>
-                    </div>
-                    <!-- start features box item -->
-                    <div class="col-auto icon-with-text-style-08 md-mb-10px text-center text-md-start">
-                        <div class="feature-box feature-box-left-icon-middle d-inline-flex align-middle">
-                            <div class="feature-box-icon me-5px">
-                                <i class="bi bi-geo-alt-fill fs-15 text-dark-gray"></i>
-                            </div>
-                            <div class="feature-box-content">
-                                <span class="fs-14 fw-600 text-dark-gray text-uppercase">Lokasi di Jl. Pasir Kaliki</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end features box item -->
-                    <div class="col-auto md-mb-15px d-none d-md-flex">
-                        <span class="progress-step-separator bg-dark-gray w-100px lg-w-70px separator-line-1px d-block mx-auto"></span>
-                    </div>
-                    <!-- start features box item -->
-                    <div class="col-auto icon-with-text-style-08 text-center text-md-start">
-                        <div class="feature-box feature-box-left-icon-middle d-inline-flex align-middle">
-                            <div class="feature-box-icon me-5px">
-                                <i class="bi bi-heart-fill fs-15 text-dark-gray"></i>
-                            </div>
-                            <div class="feature-box-content">
-                                <span class="fs-14 fw-600 text-dark-gray text-uppercase">Desain Interior Berprestasi</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end features box item -->
-                </div>
-            </div>
-        </section>
-        <!-- end section -->
-        <!-- Start Section -->
-        <section class="position-relative overflow-hidden section-dark">
-            <div class="container">
-                <div class="row align-items-center position-relative">
-                    <!-- Kolom Gambar -->
-                    @if ($tentang && $tentang->thumbnail)
-                    <div class="col-lg-6">
-                        <div class="image-container" data-bottom-top="transform: translateY(-80px)" data-top-bottom="transform: translateY(80px)">
-                            <img src="{{ asset('storage/' . $tentang->thumbnail) }}" alt="Biologi">
-                        </div>
-                    </div>
-                    @endif
-                    <!-- Kolom Teks -->
-                    @if ($tentang && $tentang->deskripsi)
-                    <div class="col-lg-6 content-container" style="height: 400px;" data-anime='{ "effect": "slide", "color": "#ffffff", "direction":"lr", "easing": "easeOutQuad", "delay":50 }'>
-                        <h1 class="section-title">Desain Interior.</h1>
-                        <p class="section-text" style="text-align: justify;">
-                            {!! Str::before($tentang->deskripsi, '</p>') . '</p>' !!}
-                        </p>    
-                        <a href="/tentang" class="btn btn-large btn-expand-ltr text-dark-gray btn-rounded fw-700">
-                            <span class="bg-base-color"></span>Tentang Desain Interior
-                        </a>
-                    </div>
-                    @endif
-                </div>
-            </div>
-        </section>
-        <!-- End Section -->
-        <!-- start section -->  
-        <section class="p-0 overflow-hidden">
-            <div class="container">
-                <div class="bg-dark-gray border-radius-6px p-8 md-p-6 sm-p-10 position-relative overflow-hidden">
-                    <div class="row justify-content-center mb-5">
-                        <div class="col-lg-8 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                            <h2 class="text-white fw-700 ls-minus-1px z-index-1 position-relative">Visi, Misi dan Tujuan</h2>
-                        </div>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-3 justify-content-center" data-anime='{ "el": "childs", "translateX": [-30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <!-- Start Process Step Item -->
-                        <div class="col text-center last-paragraph-no-margin hover-box process-step-style-01 sm-mb-40px">
-                            <div class="process-step-icon-box position-relative mb-25px">
-                                <span class="progress-step-separator bg-white w-60 separator-line-1px opacity-2"></span>
-                                <!-- Link di sekitar elemen bulat -->
-                                <a href="/visi-misi-tujuan#visi" class="process-step-icon-link">
-                                    <div class="process-step-icon d-flex justify-content-center align-items-center mx-auto rounded-circle h-80px w-80px fs-18 bg-white box-shadow-large text-dark-gray alt-font fw-500">
-                                        <span class="fw-600 number position-relative z-index-1">01</span>
-                                        <div class="box-overlay bg-base-color rounded-circle"></div>
-                                    </div>
-                                </a>
-                            </div>
-                            <span class="d-inline-block fs-32 fw-500 text-white mb-5px">Visi</span>
-                            @if ($visiMisiTujuan && $visiMisiTujuan->visi)
-                            <p class="w-80 md-w-90 d-inline-block">{!! $visiMisiTujuan->visi !!}</p>
-                            @endif
-                        </div>
-                        <!-- End Process Step Item -->
-                        <!-- start process step item -->
-                        <div class="col text-center last-paragraph-no-margin hover-box process-step-style-01 sm-mb-40px">
-                            <div class="process-step-icon-box position-relative mb-25px">
-                                <span class="progress-step-separator bg-white w-60 separator-line-1px opacity-2"></span>
-                                <!-- Link di sekitar elemen bulat -->
-                                <a href="/visi-misi-tujuan#misi" class="process-step-icon-link">
-                                    <div class="process-step-icon d-flex justify-content-center align-items-center mx-auto rounded-circle h-80px w-80px fs-18 bg-white box-shadow-large text-dark-gray alt-font fw-500">
-                                        <span class="fw-600 number position-relative z-index-1">02</span>
-                                        <div class="box-overlay bg-base-color rounded-circle"></div>
-                                    </div>
-                                </a>
-                            </div>
-                            <span class="d-inline-block fs-32 fw-500 text-white mb-5px">Misi</span>
-                            @if ($visiMisiTujuan && $visiMisiTujuan->misi)
-                            <p class="w-80 md-w-90 d-inline-block">{!! $visiMisiTujuan->misi !!}</p>
-                            @endif
-                        </div>
-                        <!-- end process step item -->
-                        <!-- start process step item -->
-                        <div class="col text-center last-paragraph-no-margin hover-box process-step-style-01">
-                            <div class="process-step-icon-box position-relative mb-25px">
-                                <span class="progress-step-separator bg-white w-60 separator-line-1px opacity-2 d-md-none"></span>
-                                <!-- Link di sekitar elemen bulat -->
-                                <a href="/visi-misi-tujuan#tujuan" class="process-step-icon-link">
-                                    <div class="process-step-icon d-flex justify-content-center align-items-center mx-auto rounded-circle h-80px w-80px fs-18 bg-white box-shadow-large text-dark-gray alt-font fw-500">
-                                        <span class="fw-600 number position-relative z-index-1">03</span>
-                                        <div class="box-overlay bg-base-color rounded-circle"></div>
-                                    </div>
-                                </a>
-                            </div>
-                            <span class="d-inline-block fs-32 fw-500 text-white mb-5px">Tujuan</span>
-                            @if ($visiMisiTujuan && $visiMisiTujuan->tujuan)
-                            <p class="w-80 md-w-90 d-inline-block">{!! $visiMisiTujuan->tujuan !!}</p>
-                            @endif
-                        </div>
-                        <!-- end process step item -->
-                    </div>
-                    <div class="position-absolute top-5px ls-minus-6px left-0px w-100 text-center" data-bottom-top="transform: translate3d(380px, 0px, 0px);" data-top-bottom="transform: translate3d(-380px, 0px, 0px);">
-                        <div class="fs-200 sm-fs-170 xs-fs-110 fw-700 opacity-1">Visi, Misi dan Tujuan</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end section -->
-        <!-- start page title --> 
-        <section class="p-0">
-            <div class="container">
-                <div class="row align-items-center justify-content-center extra-very-small-screen">
-                    <div class="col-xl-8 col-lg-10 text-center position-relative page-title-extra-large" data-anime='{ "el": "childs", "translateY": [-15, 0], "opacity": [0,1], "duration": 300, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <h1 class="fw-700 text-dark-gray mb-20px ls-minus-2px">Kata Sambutan</h1>
-                        <h2 class="fw-400 ls-0px mb-0">Selamat datang di website resmi program studi Desain Interior IWU</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <!-- end page title -->
         <!-- start section -->
-        <section class="p-0 md-pt-50px position-relative">
+        <section class="md-pt-40px sm-pt-20px">
             <div class="container">
-                <div class="row align-items-center position-relative">
-                    <!-- Kolom Gambar -->
-                    <div class="col-lg-6">
-                        @if ($pimpinanStaff && $pimpinanStaff->foto)
-                        <div class="image-container" data-bottom-top="transform: translateY(-80px)" data-top-bottom="transform: translateY(80px)">
-                            <img src="{{ asset('storage/' . $pimpinanStaff->foto) }}" alt="Informatika">
+                <div class="row justify-content-center md-mb-5">
+                    <div class="col-lg-5 md-mb-50px" data-anime='{ "el": "childs", "willchange": "transform", "opacity": [0, 1], "rotateY": [90, 0], "rotateZ": [-10, 0], "translateY": [80, 0], "translateZ": [50, 0], "staggervalue": 200, "duration": 600, "delay": 100, "easing": "easeOutCirc" }'>
+                        <span class="fw-600 fs-22 alt-font text-base-color text-uppercase mb-25px d-block"><span class="w-40px xs-w-30px h-2px bg-base-color d-inline-block align-middle me-15px"></span>Desain Interior</span>
+                        @if ($tentang && $tentang->deskripsi)
+                        <p class="mb-30px sm-mb-25px">{!! Str::before($tentang->deskripsi, '</p>') . '</p>' !!}</p>
+                        @endif
+                        <div class="d-inline-block">
+                            <a href="/tentang" class="btn btn-large btn-round-edge btn-dark-gray btn-slide-right me-25px xs-me-15px">Tentang Desain Interior<span class="bg-white"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 position-relative offset-lg-1">
+                        @if ($tentang && $tentang->thumbnail)
+                        <div class="text-end w-80 ms-auto" data-animation-delay="500" data-shadow-animation="true" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
+                            <img src="{{ asset('storage/' . $tentang->thumbnail) }}" alt="" class="border-radius-5px w-100">
+                        </div>
+                        <div class="w-55 md-w-50 overflow-hidden position-absolute left-15px bottom-minus-20px" data-shadow-animation="true" data-animation-delay="500" data-bottom-top="transform: translateY(-30px)" data-top-bottom="transform: translateY(30px)">
+                            <img src="{{ asset('storage/' . $tentang->thumbnail) }}" alt="" class="w-100 border-radius-5px" />
                         </div>
                         @endif
                     </div>
-                    <!-- Kolom Teks -->
-                    <div class="col-lg-6 content-container" data-anime='{ "effect": "slide", "color": "#ffffff", "direction":"lr", "easing": "easeOutQuad", "delay":50 }'>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start section -->
+        <section class="position-relative overflow-hidden pt-3 lg-pt-6 md-pt-3" style="margin-bottom: -80px;"> 
+            <div class="container">
+            <span class="fw-600 fs-22 alt-font text-base-color text-uppercase mb-25px d-block"><span class="w-40px xs-w-30px h-2px bg-base-color d-inline-block align-middle me-15px"></span>Visi, Misi dan Tujuan</span>
+            <div class="row row-cols-1 row-cols-xl-3 row-cols-lg-3 row-cols-md-2 justify-content-center"
+                data-anime='{ "el": "childs", "rotateZ": [5, 0], "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                <!-- Visi -->
+                <div class="col process-step-style-05 position-relative hover-box md-mb-40px">
+                    <div class="process-step-item">
+                        <div class="process-content last-paragraph-no-margin d-flex align-items-center" style="margin-bottom: 10px;">
+                            <a href="/visi-misi-tujuan" class="icon-circle bg-dark-gray text-white d-flex align-items-center justify-content-center me-2 text-decoration-none">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <span class="alt-font fs-22 fw-600 text-uppercase text-dark-gray mb-2">Visi</span>
+                        </div>
+                        @if ($visiMisiTujuan && $visiMisiTujuan->visi)
+                        <p class="lh-22 mt-2 ms-3">{!! $visiMisiTujuan->visi !!}</p>
+                        @endif
+                    </div>
+                </div>
+                <!-- Misi -->
+                <div class="col process-step-style-05 position-relative hover-box md-mb-40px">
+                    <div class="process-step-item">
+                        <div class="process-content last-paragraph-no-margin d-flex align-items-center" style="margin-bottom: 10px;">
+                            <a href="/visi-misi-tujuan" class="icon-circle bg-dark-gray text-white d-flex align-items-center justify-content-center me-2 text-decoration-none">
+                                <i class="fas fa-bullhorn"></i>
+                            </a>
+                            <span class="alt-font fs-22 fw-600 text-uppercase text-dark-gray">Misi</span>
+                        </div>
+                        @if ($visiMisiTujuan && $visiMisiTujuan->misi)
+                        <p class="lh-22 mt-2 ms-3">{!! $visiMisiTujuan->misi !!}</p>
+                        @endif
+                    </div>
+                </div>
+                <!-- Tujuan -->
+                <div class="col process-step-style-05 position-relative hover-box">
+                    <div class="process-step-item">
+                        <div class="process-content last-paragraph-no-margin d-flex align-items-center" style="margin-bottom: 10px;">
+                            <a href="/visi-misi-tujuan" class="icon-circle bg-dark-gray text-white d-flex align-items-center justify-content-center me-2 text-decoration-none">
+                                <i class="fas fa-bullseye"></i>
+                            </a>
+                            <span class="alt-font fs-22 fw-600 text-uppercase text-dark-gray">Tujuan</span>
+                        </div>
+                        @if ($visiMisiTujuan && $visiMisiTujuan->tujuan)
+                        <p class="lh-22 mt-2 ms-3">{!! $visiMisiTujuan->tujuan !!}</p>
+                        @endif
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- CSS tambahan -->
+        <style>
+            .icon-circle {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                font-size: 18px;
+                transition: background-color 0.3s ease;
+            }
+            .icon-circle:hover {
+                opacity: 0.85;
+            }
+        </style>
+        <!-- end section -->
+        <!-- start section -->
+        <section class="md-pt-40px sm-pt-20px" style="padding-top: 0px; margin-bottom: -120px;">
+            <div class="container">
+                <div class="row justify-content-center md-mb-5">
+                    <div class="col-lg-5 md-mb-50px" data-anime='{ "el": "childs", "willchange": "transform", "opacity": [0, 1], "rotateY": [90, 0], "rotateZ": [-10, 0], "translateY": [80, 0], "translateZ": [50, 0], "staggervalue": 200, "duration": 600, "delay": 100, "easing": "easeOutCirc" }'>
+                        <span class="fw-600 fs-22 alt-font text-base-color text-uppercase mb-25px d-block"><span class="w-40px xs-w-30px h-2px bg-base-color d-inline-block align-middle me-15px"></span>Kata Sambutan</span>
                         @if ($pimpinanStaff && $pimpinanStaff->kata_sambutan)
                         <p class="section-text">
                             {!! Str::before($pimpinanStaff->kata_sambutan, '</p>') . '</p>' !!}
@@ -405,9 +345,16 @@
                             <span class="fw-600">{!! $pimpinanStaff->nama !!},</span> {!! $pimpinanStaff->status !!}
                             @endif
                         </div>
-                        <a href="{{ route('pimpinanStaff.showDetail', $pimpinanStaff->id) }}" class="btn btn-large btn-expand-ltr text-dark-gray btn-rounded fw-700">
-                            <span class="bg-base-color"></span>Lihat Selengkapnya
-                        </a>
+                        <div class="d-inline-block">
+                            <a href="{{ route('pimpinanStaff.showDetail', $pimpinanStaff->id) }}" class="btn btn-large btn-round-edge btn-dark-gray btn-slide-right me-25px xs-me-15px">Lihat Selengkapnya<span class="bg-white"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 position-relative offset-lg-1">
+                        @if ($pimpinanStaff && $pimpinanStaff->foto)
+                        <div class="text-end w-80 ms-auto" data-animation-delay="500" data-shadow-animation="true" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
+                            <img src="{{ asset('storage/' . $pimpinanStaff->foto) }}" alt="" class="border-radius-5px w-100">
+                        </div>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -418,10 +365,10 @@
             <div class="container">
                 <div class="row align-items-center mb-4">
                     <div class="col-md-6 text-center text-md-start sm-mb-20px">
-                        <h2 class="fw-600 text-dark-gray mb-0 ls-minus-3px">Berita Terbaru</h2>
+                    <span class="fw-600 fs-22 alt-font text-base-color text-uppercase mb-25px d-block"><span class="w-40px xs-w-30px h-2px bg-base-color d-inline-block align-middle me-15px"></span>Berita Terbaru</span>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        <a href="/berita" class="btn btn-large btn-expand-ltr text-dark-gray btn-rounded fw-700"><span class="bg-base-color"></span>Jelajahi Semua Berita</a>
+                        <a href="/berita" class="btn btn-large btn-round-edge btn-dark-gray btn-slide-right me-25px xs-me-15px"><span></span>Jelajahi Semua Berita</a>
                     </div>
                 </div>
                 <div class="row">
