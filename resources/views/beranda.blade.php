@@ -20,7 +20,8 @@
         <link rel="stylesheet" href="{{asset('css/icon.min.css')}}"/>
         <link rel="stylesheet" href="{{asset('css/style.css')}}"/>
         <link rel="stylesheet" href="{{asset('css/responsive.css')}}"/>
-        <link rel="stylesheet" href="{{asset('demos/hosting/hosting.css')}}" />
+        <link rel="stylesheet" href="{{asset('demos/hosting/hosting.css')}}"/>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
     <body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="">
         <!-- start header --> 
@@ -274,7 +275,7 @@
                 <div class="col process-step-style-05 position-relative hover-box md-mb-40px">
                     <div class="process-step-item">
                         <div class="process-content last-paragraph-no-margin d-flex align-items-center" style="margin-bottom: 10px;">
-                            <a href="/visi-misi-tujuan" class="icon-circle bg-dark-gray text-white d-flex align-items-center justify-content-center me-2 text-decoration-none">
+                            <a href="{{ url('/visi-misi-tujuan?tab=visi') }}" class="icon-circle bg-dark-gray text-white d-flex align-items-center justify-content-center me-2 text-decoration-none">
                                 <i class="fas fa-eye"></i>
                             </a>
                             <span class="alt-font fs-22 fw-600 text-uppercase text-dark-gray mb-2">Visi</span>
@@ -288,13 +289,15 @@
                 <div class="col process-step-style-05 position-relative hover-box md-mb-40px">
                     <div class="process-step-item">
                         <div class="process-content last-paragraph-no-margin d-flex align-items-center" style="margin-bottom: 10px;">
-                            <a href="/visi-misi-tujuan" class="icon-circle bg-dark-gray text-white d-flex align-items-center justify-content-center me-2 text-decoration-none">
+                            <a href="{{ url('/visi-misi-tujuan?tab=misi') }}" class="icon-circle bg-dark-gray text-white d-flex align-items-center justify-content-center me-2 text-decoration-none">
                                 <i class="fas fa-bullhorn"></i>
                             </a>
-                            <span class="alt-font fs-22 fw-600 text-uppercase text-dark-gray">Misi</span>
+                            <span class="alt-font fs-22 fw-600 text-uppercase text-dark-gray mb-2">Misi</span>
                         </div>
-                        @if ($visiMisiTujuan && $visiMisiTujuan->misi)
-                        <p class="lh-22 mt-2 ms-3">{!! $visiMisiTujuan->misi !!}</p>
+                        @if ($visiMisiTujuan && is_array($visiMisiTujuan->misi) && count($visiMisiTujuan->misi) > 0)
+                            <p class="lh-35 mt-0 ms-3">
+                                {!! $visiMisiTujuan->misi[0]['text'] !!}
+                            </p>
                         @endif
                     </div>
                 </div>
@@ -302,13 +305,15 @@
                 <div class="col process-step-style-05 position-relative hover-box">
                     <div class="process-step-item">
                         <div class="process-content last-paragraph-no-margin d-flex align-items-center" style="margin-bottom: 10px;">
-                            <a href="/visi-misi-tujuan" class="icon-circle bg-dark-gray text-white d-flex align-items-center justify-content-center me-2 text-decoration-none">
+                            <a href="{{ url('/visi-misi-tujuan?tab=tujuan') }}" class="icon-circle bg-dark-gray text-white d-flex align-items-center justify-content-center me-2 text-decoration-none">
                                 <i class="fas fa-bullseye"></i>
                             </a>
                             <span class="alt-font fs-22 fw-600 text-uppercase text-dark-gray">Tujuan</span>
                         </div>
-                        @if ($visiMisiTujuan && $visiMisiTujuan->tujuan)
-                        <p class="lh-22 mt-2 ms-3">{!! $visiMisiTujuan->tujuan !!}</p>
+                        @if ($visiMisiTujuan && is_array($visiMisiTujuan->tujuan) && count($visiMisiTujuan->tujuan) > 0)
+                            <p class="lh-35 mt-0 ms-3">
+                                {!! $visiMisiTujuan->tujuan[0]['text'] !!}
+                            </p>
                         @endif
                     </div>
                 </div>
@@ -351,8 +356,13 @@
                     </div>
                     <div class="col-lg-6 position-relative offset-lg-1">
                         @if ($pimpinanStaff && $pimpinanStaff->foto)
-                        <div class="text-end w-80 ms-auto" data-animation-delay="500" data-shadow-animation="true" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
-                            <img src="{{ asset('storage/' . $pimpinanStaff->foto) }}" alt="" class="border-radius-5px w-100">
+                        <div class="ms-7" data-animation-delay="500" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
+                            <img 
+                                src="{{ asset('storage/' . $pimpinanStaff->foto) }}"
+                                alt="Foto Pimpinan"
+                                class="img-fluid rounded"
+                                style="max-width: 250px;"
+                            >
                         </div>
                         @endif
                     </div>
