@@ -2,7 +2,7 @@
 
 @section('content')
         <!-- Start Section -->
-        <section id="profil-lulusan" class="mb-0 pb-0" data-anime='{ "opacity": [0, 1], "translate": [0, 0], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }' style="margin-top: 50px;">
+    <section id="profil-lulusan" class="mb-0 pb-0" data-anime='{ "opacity": [0, 1], "translate": [0, 0], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }' style="margin-top: 50px;">
             <div class="container text-center">
                 <div class="card shadow-lg border-0 rounded-3 overflow-hidden" data-anime='{ "opacity": [0, 1], "translateX": [30, 0], "duration": 600, "delay": 200, "staggervalue": 200, "easing": "easeOutQuad" }'>
                     <div class="card-body p-4">
@@ -52,4 +52,64 @@
             </div>
         </section>
         <!-- End Section -->
+        <!-- start section -->
+        <section class="bg-gradient-quartz-white border-radius-6px lg-border-radius-0px">
+            <div class="container background-no-repeat background-position-top"
+                style="background-image: url('https://via.placeholder.com/1126x630')">
+                <div class="row justify-content-center mb-3">
+                    <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9 text-center"
+                        data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <h5 class="text-dark-gray fw-700 ls-minus-1px">Testimoni Alumni</h5>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center"
+                    data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 100, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <div class="col-12 position-relative ps-8 pe-8 lg-ps-15px lg-pe-15px">
+                        <div class="swiper magic-cursor testimonials-style-06"
+                            data-slider-options='{
+                                "loop": true,
+                                "autoplay": { "delay": 4000, "disableOnInteraction": false },
+                                "keyboard": { "enabled": true, "onlyInViewport": true },
+                                "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav", "effect": "fade" },
+                                "autoHeight": true
+                            }'>
+                            <div class="swiper-wrapper">
+                                <!-- Loop through testimonials -->
+                                @foreach ($testimoniAlumni as $item)
+                                <div class="swiper-slide">
+                                    <div class="row align-items-center justify-content-center">
+                                        <!-- Testimonial photo -->
+                                        @if ($item->foto)
+                                        <div class="col-8 col-md-4 col-sm-6 text-center">
+                                            <img alt="Foto Alumni" src="{{ asset('storage/' . $item->foto) }}" class="img-fluid rounded-circle">
+                                        </div>
+                                        @endif
+                                        <!-- Testimonial text -->
+                                        <div class="col-lg-5 col-md-7 last-paragraph-no-margin text-center text-md-start">
+                                            @if ($item->teks)
+                                            <span class="mb-5px d-table fs-18 lh-30 fw-500 text-dark-gray">{!! $item->teks !!}</span>
+                                            @endif
+                                            @if ($item->nama)
+                                            <span class="fs-15 text-uppercase fw-800 text-base-color ls-1px">{!! $item->nama !!}</span>
+                                            @endif
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                                <!-- End Loop -->
+                            </div>
+                            <!-- Slider navigation -->
+                            <div class="swiper-button-previous-nav swiper-button-prev md-left-0px">
+                                <i class="feather icon-feather-arrow-left icon-extra-medium text-dark-gray"></i>
+                            </div>
+                            <div class="swiper-button-next-nav swiper-button-next md-right-0px">
+                                <i class="feather icon-feather-arrow-right icon-extra-medium text-dark-gray"></i>
+                            </div>
+                            <!-- End slider navigation -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
 @endsection

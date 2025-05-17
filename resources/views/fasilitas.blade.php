@@ -32,7 +32,9 @@
                                 @if ($item->nomor)
                                 <p class="mb-4"><strong>Nomor:</strong> {!! $item->nomor !!}</p>
                                 @endif
-                                <a href="{{ route('detail-fasilitas', ['id' => $item->id]) }}" class="btn btn-large btn-expand-ltr text-dark-gray btn-rounded fw-700"><span class="bg-base-color"></span>Lihat Selengkapnya</a>
+                                <div class="d-inline-block">
+                                    <a href="{{ route('detail-fasilitas', ['id' => $item->id]) }}" class="btn btn-large btn-round-edge btn-dark-gray btn-slide-right me-25px xs-me-15px"><span></span>Lihat Selengkapnya</a>
+                                </div>
                             </div>
                         </div>
                     </div>

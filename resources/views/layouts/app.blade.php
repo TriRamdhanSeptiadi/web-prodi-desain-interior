@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="{{asset('css/icon.min.css')}}"/>
     <link rel="stylesheet" href="{{asset('css/style.css')}}"/>
     <link rel="stylesheet" href="{{asset('css/responsive.css')}}"/>
-    <link rel="stylesheet" href="{{asset('demos/hosting/hosting.css')}}" />
+    <link rel="stylesheet" href="{{asset('demos/hosting/hosting.css')}}"/>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     @stack('styles')
 </head>

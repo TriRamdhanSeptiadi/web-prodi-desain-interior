@@ -223,7 +223,7 @@
                     @php
                         $scholarUrl = 'https://scholar.google.com/citations?user=' . $pimpinanStaff->id_google_scholar;
                     @endphp
-                    <a href="{{ $scholarUrl }}" target="_blank" class="btn w-100" style="background-color: #D77A61; color: white;">Google Scholar</a>
+                    <a href="{{ $scholarUrl }}" target="_blank" class="btn btn-large btn-round-edge btn-dark-gray btn-slide-right me-25px xs-me-15px w-100">Google Scholar</a>
                 @else
                     <span class="text-muted">Profil Google Scholar belum ditemukan.</span>
                 @endif
